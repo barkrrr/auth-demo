@@ -1,0 +1,20 @@
+<h2>Signup</h2>
+
+<form method="POST" action="/auth/signup">
+  <div class="field">
+    <label>Username</label>
+    <input type="text" name="username" value="{{fields.username}}" placeholder="Casper"/>
+  </div>
+
+  <div class="field">
+    <label>Password</label>
+    <input type="password" name="password" placeholder="👻👻👻👻👻👻👻"/>
+  </div>
+
+  <div class="field submit">
+    <button type="submit">Signup</button>
+  </div>
+  {{#if message}}
+  <p class="validation">{{message}}</p>
+  {{/if}}
+</form>
